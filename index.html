@@ -9,18 +9,17 @@
         The tailwind CDN is designed for development purposes only, and is not the best choice for production.
         Read more here: https://tailwindcss.com/docs/installation 
     -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- example for dark theme styling when using tailwind cdn -->
     <style>
         /*examples for dark/light themes*/
-        .dark .dark\:text-white {
-            color: #fff;
+        body {
+            text-align: center;
+            margin: 50px;
         }
-        .dark .dark\:bg-gray-800 {
-            background-color: #1f2937;
-        }
-        .light .light\:text-black {
-            color: #000;
+        input {
+            width: 50px;
+            padding: 10px;
+            font-size: 16px;
         }
 
         /*add your custom css rules here*/
@@ -30,14 +29,34 @@
 <body class="dark:text-white light:text-black">
 
     <!-- your app code goes here -->
-    <div>YUiudhaj</div>
+    <form name="calculator">
+        <input type="text" name="display" id="display" disabled>
+        <br>
+        <input type="button" value="7" onclick="calculator.display.value += '7'">
+        <input type="button" value="8" onclick="calculator.display.value += '8'">
+        <input type="button" value="9" onclick="calculator.display.value += '9'">
+        <input type="button" value="/" onclick="calculator.display.value += '/'">
+        <br>
+        <input type="button" value="4" onclick="calculator.display.value += '4'">
+        <input type="button" value="5" onclick="calculator.display.value += '5'">
+        <input type="button" value="6" onclick="calculator.display.value += '6'">
+        <input type="button" value="-" onclick="calculator.display.value += '-'">
+        <br>
+        <input type="button" value="1" onclick="calculator.display.value += '1'">
+        <input type="button" value="2" onclick="calculator.display.value += '2'">
+        <input type="button" value="3" onclick="calculator.display.value += '3'">
+        <input type="button" value="+" onclick="calculator.display.value += '+'">
+        <br>
+        <input type="button" value="0" onclick="calculator.display.value += '0'">
+        <input type="button" value="." onclick="calculator.display.value += '.'">
+        <input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+        <input type="button" value="C" onclick="calculator.display.value = ''">
+    </form>
 
     <!-- special scripts for integration in MTW gallery - must be placed at the bottom of the HTML after your code -->
     <script>
         // custom config for the MTW app 
-        const mtwAppConfig = {
-            border: true // app border in the MTW page                    
-        }
+        
 
         ///////////////////////////////////////////////////////
         // implement this functions in order to use private API        
