@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    width: 80px;
+    height: 55px;
+    font-size: 20px;
+    margin: 2px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+input[value="="] {
+    grid-column: span 2;
+    background-color: #28a745;
+    color: #fff;
+}
+
+input[name="display"] {
+    grid-column: span 2;
+    background-color: #98bcb2;
+    color: #fff;
+}
+
+input[name="M"] {
+    grid-column: span 2;
+    background-color: #20725b;
+    color: #fff;
+    margin: 1px;
+    width: 67px
+}
+
+input[value="C"],
+input[value="del"] {
+    background-color: #dc3545;
+    color: #fff;
+}
