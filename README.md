@@ -5,7 +5,7 @@ This repository contains a simple, web-based calculator built with HTML, CSS, an
 ![Calculator Screenshot](./image.png)
 
 ## Demo
-You can try out the calculator live [here](https://yuvalrozner.github.io/Basic_Web_Calculator/).
+[You can try out the calculator live here](https://yuvalrozner.github.io/Basic_Web_Calculator/).
 
 ## Features
 - Basic arithmetic operations: addition, subtraction, multiplication, and division
