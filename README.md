@@ -2,7 +2,7 @@
 
 This repository contains a simple, web-based calculator built with HTML, CSS, and JavaScript. The calculator provides basic arithmetic operations, as well as some scientific functions like square root, exponentials, and logarithms.
 
-![Calculator Screenshot](./image.png)
+![Calculator Screenshot](./screenshot.png)
 
 ## Demo
 [You can try out the calculator live here](https://yuvalrozner.github.io/Basic_Web_Calculator/).
@@ -17,8 +17,6 @@ This repository contains a simple, web-based calculator built with HTML, CSS, an
 
 ## Screenshot
 The following image shows the layout of the calculator:
-
-![Calculator Layout](./image.png)
 
 ## Installation
 Clone the repository to your local machine:
